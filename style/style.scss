@@ -1,0 +1,318 @@
+@import '_variables.scss';
+
+// !Global //
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+   background: black;
+   font-family: $fontMain;
+   color: white;
+}
+p {
+   font-size: 12.8px;
+}
+h4 {
+   font-size: 20px;
+}
+h3 {
+   font-size: 25px;
+}
+h2 {
+   font-size: 31.25px;
+}
+h1 {
+   font-size: 39.06px;
+}
+.wowTooltip {
+   color: $dkRed;
+   text-decoration: none;
+
+}
+// !Nav! //
+#navbar {
+   z-index: 1;
+   position: sticky;
+   top: 0;
+   display: flex; 
+   flex-flow: row nowrap;
+   justify-content: flex-end;
+   align-items: center;
+   background-color: #0E0E0E;
+   border: solid 3px black;
+   width: 1520px;
+   height: 70px;
+   -webkit-user-select: none;  /* Chrome all / Safari all */
+   -moz-user-select: none;     /* Firefox all */
+   -ms-user-select: none;      /* IE 10+ */
+   .navButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0.2px solid rgba(75, 75, 75, .50);
+      width: 180px;
+      height: 62px;
+      background-color: #0E0E0E;
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+   }
+   .navButton:hover {
+      background-color: rgba(30, 30, 30, .50);
+   }
+   // *Drop Down* //
+   .dropdownContent {
+      display: none;
+      position: absolute;
+      background: #1E1E1E;
+      font-family: $fontMain;
+      font-weight: 600;
+   }
+   .dropdownContent a {
+      color: white;
+      display: block;
+      padding: 15px 16px;
+      text-align: center;
+      min-width: 180px;
+      border: 1px solid black;
+   }
+   .dropdownContent a:hover {
+      background-color: #2E2E2E;
+   }
+   #guidesDropdown:hover .dropdownContent {
+      display: block;
+   }
+   // *Drop Down End* //
+   #discordHeader {
+      display: flex;
+      width: 307px;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      p {
+         margin-top: 5px;
+         color: $accentBlue;
+         font-size: 16px;
+         font-weight: 600;
+      }
+      #discordButton {
+         width: 170px;
+         height: 30px;
+         border-radius: 40px;
+         border: 3px solid black;
+         background-color: #1b1b1b;
+         text-align: center;
+         cursor: pointer;
+      }
+      #discordButton p {
+         color: white;
+      }
+      #discordButton:hover {
+         background-color: #2b2b2b;
+      }
+   }
+   #runeforgeTitle {
+      padding: 0px 20px 0px 0px;
+   }
+   a {
+      text-decoration: none;
+   }
+}
+
+/// Content ///
+// !Global! //
+.main {
+   width: 100%;
+   display: flex;
+   flex-flow: column nowrap;
+   border: 3px solid black;
+   align-items: center;
+   letter-spacing: 0.01%;
+   .contentFrame {
+      width: 1520px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      background-color: $backdrop;
+      text-align: center;
+      border: 3px solid black;
+      // ***Guide Nav*** //
+      .guideNav {
+         position: fixed;
+         left: 70%;
+         width: 220px;
+         border-left: 3px solid $accentBlue;
+         padding-left: 10px;
+         li {
+            line-height: 25px !important;
+            font-weight: 900;
+         }
+         a {
+            text-decoration: none;
+            color: white;
+            padding-left: 3px;
+
+         }
+      }
+   }
+}
+/// Guide Nav Boxes ///
+.guideNavBoxes {
+   display: grid;
+   grid-auto-flow: column;
+   background-color: #121212;
+   border-top: 4px solid black;
+   border-bottom: 4px solid black;
+   padding-left: 10%;
+   padding-right: 10%;
+   margin-bottom: 60px;
+   width: 100%;
+   .guideBox {
+      position: relative;
+      img {
+         border: 3px solid black;
+      }
+      h1 {
+         pointer-events: none;
+         -webkit-text-stroke-width: 1.5px;
+         -webkit-text-stroke-color: black;
+      }
+   }
+   #bloodBox {
+      h1 {
+         color: $bloodRed !important;
+      }
+   }
+   #frostBox {
+      h1 {
+         color: $frostBlue !important;
+      }
+   }
+   #unholyBox {
+      h1 {
+         color: $unholyGreen !important;
+      }
+   }
+}
+
+// !Homepage! //
+#homeMain #homeContent {
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   background-color: $backdrop;
+   text-align: center;
+   img {
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+   }
+   h1 {
+      color: $dkRed;
+      padding: 20px 0px 0px 0px;
+   }
+   p {
+      width: 1045px;
+      padding: 20px 0px 20px 0px;
+      font-size: 16px;
+   }
+   a {
+      text-decoration: none;
+      color: $accentBlue;
+      font-weight: 600;
+      font-size: 17px;
+   }
+}
+
+// !Guides! //
+#guideContent {
+   position: relative;
+   right: 13%;
+   text-align: left;
+   padding: 15% 10% 0% 10%;
+   z-index: 0;
+   h1 {
+      padding-bottom: 20px;
+   }
+   h2 {
+      padding-bottom: 20px;
+   }
+   h3 {
+      margin-left: 4%;
+   }
+   p {
+      margin-left: 2%;
+      padding-bottom: 20px;
+      font-weight: 600;
+      width: 850px;
+      line-height: 25px;
+   }
+   li {
+      list-style: none;
+      margin-left: 7%;
+      line-height: 34px;
+      font-size: 12.8px;
+   }
+   .strTick {
+      color: #00FF19;
+   }
+   .weakTick {
+      color: #FF0000;
+   }
+   #talents {
+      margin-top: 20px;
+      .talentTierImg {
+         padding-bottom: 10px;
+         margin-left: 1.2%;
+         width: 90%;
+      }
+      .talentTierDesc {
+         margin-bottom: 4%;
+      }
+   }
+   // ***Talent Box*** //
+   #talentChart {
+      margin-top: 10px;
+      margin-left: 2%;
+      margin-bottom: 30px;
+      display: grid;
+      width: 750px;
+      grid-template-rows: repeat(4, 170px);
+      font-weight: 700;
+      .talentChartRow {
+         border: 0.4px solid #9F9F9F;
+         display: grid;
+         grid-auto-flow: row;
+         grid-template-columns: 300px 80px 250px;
+         line-height: 19px;
+         align-items: center;
+         .talentTiers {
+            text-align: right;
+         }
+         .talentNames {
+            color: $dkRed;
+         }
+         li {
+            line-height: 19px;
+            font-size: 12.8px;
+         }
+         h4 {
+            text-align: center;
+            font-size: 14px;
+         }
+         a {
+            padding-left: 3px;
+         }
+ 
+      }        
+      #bosST, #oblitST {
+         background-color: #161616;
+      }
+      #bosCleave, #oblitCleave {
+         background-color: #222222;
+      }
+   }
+}

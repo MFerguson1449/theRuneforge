@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Runeforge</title>
+   <link type="text/css" rel="stylesheet" href="./style/style.scss">
+
+   <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="./icon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+   <link rel="manifest" href="./icon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+   <link href="https://fonts.googleapis.com/css?family=Metal+Mania|Raleway:400,500,600,800&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <!--Navigation-->
+   <div class="main" id='homeMain'>
+      <div id="navbar">
+         <a href='index.html'><img src='./img/death-knight-icon.svg' alt='death knight logo' id='dkLogo'></a>
+         <img src='./img/runeforgeName.svg' alt='The Runeforge title text' id='runeforgeTitle'>
+         <a href='index.html'>
+            <h4 class='navButton'>Home</h4>
+         </a>
+         <div id="guidesDropdown">
+            <h4 class='navButton'>Guides</h4>
+            <div class='dropdownContent'>
+               <a href='#'>Blood Guide</a>
+               <a href='frostGuide.html'>Frost Guide</a>
+               <a href='unholyGuide.html'>Unholy Guide</a>
+            </div>
+         </div>
+         <a href='resources.html'>
+            <h4 class='navButton'>Resources</h4>
+         </a>
+         <a href='about.html'>
+            <h4 class='navButton'>About</h4>
+         </a>
+         <div id="discordHeader">
+            <a href='https://discord.gg/acherus' target='_blank' id='discordButton'>
+               <p>Discord</p>
+            </a>
+            <p>Join the community!</p>
+         </div>
+      </div>
+
+      <!--Content-->
+      <div id="contentFrame">
+         <div id="homeContent">
+            <img src='./img/runeforgeBanner.jpg' alt='banner image' id='bannerImg'>
+            <h1>Welcome to The Runeforge!</h1>
+            <p>On this website you will find all the information that you will need to tackle the hardest content that
+               World of Warcraft has to offer. Guide’s for all talent specializations. Information courtesy of the great
+               minds of the Death Knight Community. <span id='joinHereButton'><a href='https://discord.gg/acherus'
+                     target='_blank'>Join Here!</a></span></p>
+
+            <!---Guide Nav Boxes-->
+            <div class="guideNavBoxes">
+               <div id="bloodBox" class='guideBox'>
+                  <h1>Blood</h1>
+                  <img src='./img/blood-img.svg' alt='blood spec image'>
+               </div>
+               <div id="frostBox" class='guideBox'>
+                  <h1>Frost</h1>
+                  <a href='frostGuide.html'><img src='./img/frost-img.svg' alt='frost spec image'></a>
+               </div>
+               <div id="unholyBox" class='guideBox'>
+                  <h1>Unholy</h1>
+                  <a href='unholyGuide.html'><img src='./img/unholy-img.svg' alt='unholy spec image'></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src='./script.js'></script>
+</body>
+
+</html>
