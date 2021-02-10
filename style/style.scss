@@ -44,8 +44,7 @@ h1 {
    align-items: center;
    background-color: #0E0E0E;
    border: solid 3px black;
-   width: 1520px;
-   height: 70px;
+   width: 90%;
    -webkit-user-select: none;  /* Chrome all / Safari all */
    -moz-user-select: none;     /* Firefox all */
    -ms-user-select: none;      /* IE 10+ */
@@ -94,7 +93,7 @@ h1 {
    // *Drop Down End* //
    #discordHeader {
       display: flex;
-      width: 307px;
+      width: 30%;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
@@ -131,41 +130,24 @@ h1 {
 /// Content ///
 // !Global! //
 .main {
-   width: 100%;
+   width: 100vw;
    display: flex;
    flex-flow: column nowrap;
    border: 3px solid black;
    align-items: center;
    letter-spacing: 0.01%;
    .contentFrame {
-      width: 1520px;
+      width: 90%;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
       background-color: $backdrop;
       text-align: center;
       border: 3px solid black;
-      // ***Guide Nav*** //
-      .guideNav {
-         position: fixed;
-         bottom: 32%;
-         left: 75%;
-         width: 220px;
-         border-left: 3px solid $accentBlue;
-         padding-left: 10px;
-         li {
-            line-height: 25px !important;
-            font-weight: 900;
-         }
-         a {
-            text-decoration: none;
-            color: white;
-            padding-left: 3px;
-
-         }
-      }
+      position: relative;
    }
 }
+
 /// !Page Nav Boxes! ///
 .guideNavBoxes {
    display: grid;
@@ -229,6 +211,30 @@ h1 {
    }
 }
 
+// !Guide Nav //
+.guideNav {
+   position: fixed;
+   bottom: 32%;
+   left: 75%;
+   width: 220px;
+   border-left: 3px solid $accentBlue;
+   padding-left: 10px;
+   text-align: left;
+   width: auto;
+   font-size: 0.8rem;
+   li {
+      line-height: 25px !important;
+      font-weight: 900;
+      list-style: none;
+   }
+   a {
+      text-decoration: none;
+      color: white;
+      padding-left: 3px;
+
+   }
+}
+
 // !Homepage! //
 #homeMain #homeContent {
    display: flex;
@@ -265,24 +271,25 @@ h1 {
 // !Guides! //
 #guideContent {
    position: relative;
-   right: 13%;
    text-align: left;
-   padding: 3% 10% 0% 10%;
+   padding: 3% 11% 0% 3%;
    z-index: 0;
    h1 {
       padding-bottom: 20px;
+      margin-left: 2%;
    }
    h2 {
       padding-bottom: 20px;
+      margin-left: 2%;
    }
    h3 {
       margin-left: 4%;
    }
    p {
-      margin-left: 2%;
+      margin-left: 5%;
       padding-bottom: 20px;
       font-weight: 600;
-      width: 850px;
+      width: 75%;
       line-height: 25px;
    }
    li {
@@ -306,6 +313,12 @@ h1 {
       }
       .talentTierDesc {
          margin-bottom: 4%;
+         width: 90%;
+         img {
+            width: 70%;
+            height: auto;
+            margin-left: 3%;
+         }
       }
    }
    // ***Talent Box*** //
