@@ -148,7 +148,7 @@ h1 {
    }
 }
 
-/// !Page Nav Boxes! ///
+/// !Site Nav Boxes! ///
 .guideNavBoxes {
    display: grid;
    grid-template-areas:
@@ -211,7 +211,7 @@ h1 {
    }
 }
 
-// !Guide Nav //
+// !Guide Side Nav //
 .guideNav {
    position: fixed;
    bottom: 32%;
@@ -278,20 +278,29 @@ h1 {
    h1 {
       padding-bottom: 20px;
       margin-left: 2%;
+      margin-top: 4%;
    }
    h2 {
       padding-bottom: 20px;
-      margin-left: 2%;
+      margin-left: 3%;
+      margin-top: 3%;
    }
    h3 {
       margin-left: 4%;
+      margin-top: 4%;
+   }
+
+   h4 {
+      margin-top: 2%;
+      margin-left: 6%;
+      margin-top: 1%;
    }
    p {
-      margin-left: 5%;
-      padding-bottom: 20px;
+      margin-left: 6%;
       font-weight: 600;
       width: 75%;
       line-height: 25px;
+      margin-top: 1%;
    }
    li {
       list-style: none;
@@ -305,72 +314,67 @@ h1 {
    .weakTick {
       color: #FF0000;
    }
+   // !Talents! //
    #talents {
       margin-top: 20px;
+      #talentChart {
+         margin: 5% 2% 5% 6%;
+         margin-bottom: 30px;
+         display: grid;
+         width: 52%;
+         height: auto;
+         grid-template-rows: repeat(2, 170px);
+         font-weight: 700;
+         .talentChartRow {
+            border: 0.4px solid #9F9F9F;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 30% 20% 80%;
+            padding-left: 10%;
+            line-height: 19px;
+            align-items: center;
+            .talentTiers {
+               text-align: right;
+            }
+            .talentNames {
+               color: $dkRed;
+               padding-right: 20%;
+            }
+            li {
+               line-height: 19px;
+               font-size: 12.8px;
+            }
+            h4 {
+               text-align: center;
+               font-size: 14px;
+            }
+            a {
+               padding-left: 3px;
+            }
+         }        
+         #bosBuild {
+            background-color: #161616;
+         }
+         #oblitBuild {
+            background-color: #222222;
+         }
+      }
       .talentTierImg {
-         padding-bottom: 10px;
          margin-left: 1.2%;
          width: 90%;
       }
       .talentTierDesc {
-         margin-bottom: 4%;
          img {
             width: 56%;
             height: auto;
-            margin-left: 3%;
+            margin: 0% 0% 2% 4%;
          }
-      }
+      }    
    }
-   // ***Talent Box*** //
-   #talentChart {
-      margin-top: 10px;
-      margin-left: 2%;
-      margin-bottom: 30px;
-      display: grid;
-      width: 52%;
-      height: auto;
-      grid-template-rows: repeat(2, 170px);
-      font-weight: 700;
-      .talentChartRow {
-         border: 0.4px solid #9F9F9F;
-         display: grid;
-         grid-auto-flow: row;
-         grid-template-columns: 30% 20% 80%;
-         padding-left: 10%;
-         line-height: 19px;
-         align-items: center;
-         .talentTiers {
-            text-align: right;
-         }
-         .talentNames {
-            color: $dkRed;
-            padding-right: 20%;
-         }
-         li {
-            line-height: 19px;
-            font-size: 12.8px;
-         }
-         h4 {
-            text-align: center;
-            font-size: 14px;
-         }
-         a {
-            padding-left: 3px;
-         }
- 
-      }        
-      #bosBuild {
-         background-color: #161616;
-      }
-      #oblitBuild {
-         background-color: #222222;
-      }
-   }
+   // !Legendaries! //
    #legendaries {
-      .legendaryBlock {
-         p {
-            margin-top: 1%;
-         }
+      a {
+         color: $legendaryOrange;
       }
-   }
+   }    
 }
