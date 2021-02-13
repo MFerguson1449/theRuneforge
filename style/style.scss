@@ -387,5 +387,12 @@ h1 {
       a {
          color: $legendaryOrange;
       }
-   }    
+   }
+   
+   // !Stat Weights! //
+   #statWeights {
+      ol {
+         margin-left: 2%;
+      }
+   }
 }
