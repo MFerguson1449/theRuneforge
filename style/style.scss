@@ -149,64 +149,74 @@ h1 {
 }
 
 /// !Site Nav Boxes! ///
-.guideNavBoxes {
-   display: grid;
-   grid-template-areas:
-   "a b c";
-   //background-color: #121212;
-   //border-top: 3px solid black;
-   //border-bottom: 3px solid black;
-   width: auto;
-   margin-top: 1%;
-   grid-gap: 5%;
-   h1 {
-      font-size: 48.83px;
-      z-index: 1;
-   }
-   .navImg {
-      transform: translateY(0.5%);
-      z-index: 0;
-      border: 3px solid black;
-      height: 150px;
-      margin: -1% 0%;
-   }
-   .bloodBox {
-      grid-area: a;
-      color: $bloodRed;
-      display: flex;
+.siteNav {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #121212;
+   margin-top: 2%;
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
+   .guideNavBoxes {
+      display: grid;
+      grid-template-areas:
+      "a b c";
       justify-content: center;
-      align-items: center;
+      align-content: center;
+      margin: 0% 0;
+      grid-column-gap: 5%;
+      height: auto;
+      box-sizing: content-box;
       h1 {
-         position: absolute;
-         pointer-events: none;
-         -webkit-text-stroke-width: 1.5px;
-         -webkit-text-stroke-color: black;
+         font-size: 2.7em;
+         z-index: 1;
       }
-   }
-   .frostBox {
-      grid-area: b;
-      color: $frostBlue;
-      display: flex;
-      justify-content: center;
-      align-items: center;      
-      h1 {
-         position: absolute;
-         pointer-events: none;
-         -webkit-text-stroke-width: 1.5px;
-         -webkit-text-stroke-color: black;
+      .navImg {
+         border: 3px solid black;
+         height: auto;
+         width: 100%;
+         box-sizing: content-box;
       }
-   }
-   .unholyBox {
-      grid-area: c;
-      color: $unholyGreen;
-      display: flex;
-      justify-content: center;
-      align-items: center;     
-      h1 {
-         position: absolute;
-         pointer-events: none;
-         -webkit-text-stroke-width: 2px;
-         -webkit-text-stroke-color: black;
+      .bloodBox {
+         grid-area: a;
+         color: $bloodRed;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         h1 {
+            position: absolute;
+            pointer-events: none;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: black;
+         }
+      }
+      .frostBox {
+         grid-area: b;
+         color: $frostBlue;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         h1 {
+            position: absolute;
+            pointer-events: none;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: black;
+         }
+      }
+      .unholyBox {
+         grid-area: c;
+         color: $unholyGreen;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         h1 {
+            position: absolute;
+            pointer-events: none;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+         }
       }
    }
 }
@@ -222,6 +232,7 @@ h1 {
    text-align: left;
    width: auto;
    font-size: 0.8rem;
+   z-index: 2;
    li {
       line-height: 25px !important;
       font-weight: 900;
