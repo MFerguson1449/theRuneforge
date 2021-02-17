@@ -11,6 +11,7 @@ html {
    scroll-behavior: smooth;
    background: black;
    font-family: $fontMain;
+   font-weight: 400;
    color: white;
 }
 p {
@@ -308,7 +309,6 @@ h1 {
    }
    p {
       margin-left: 6%;
-      font-weight: 600;
       width: 75%;
       line-height: 25px;
       margin-top: 1%;
@@ -391,8 +391,18 @@ h1 {
    
    // !Stat Weights! //
    #statWeights {
-      ol {
-         margin-left: 2%;
+      h5 {
+         margin-left: 10%;
+      }
+   }
+
+   // !Enchants & Consumables! //
+   #enchantsAndConsumables {
+      h3 {
+         margin-top: 2%;
+      }
+      h1 {
+         padding-bottom: 0;
       }
    }
 }
