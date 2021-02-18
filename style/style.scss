@@ -22,12 +22,14 @@ h4 {
 }
 h3 {
    font-size: 25px;
+   color: $accentBlue;
 }
 h2 {
    font-size: 31.25px;
 }
 h1 {
    font-size: 39.06px;
+   font-weight: 600;
 }
 .wowTooltip {
    color: $dkRed;
@@ -356,10 +358,10 @@ h1 {
                padding-left: 3px;
             }
          }        
-         #bosBuild {
+         #firstBuild {
             background-color: #161616;
          }
-         #oblitBuild {
+         #secondBuild {
             background-color: #222222;
          }
       }
@@ -386,6 +388,7 @@ h1 {
    #statWeights {
       h5 {
          margin-left: 10%;
+         font-weight: 600;
       }
    }
 
