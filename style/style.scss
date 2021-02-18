@@ -74,7 +74,6 @@ h1 {
       display: none;
       position: absolute;
       background: #1E1E1E;
-      font-family: $fontMain;
       font-weight: 600;
    }
    .dropdownContent a {
@@ -168,7 +167,6 @@ h1 {
       align-content: center;
       margin: 0% 0;
       grid-column-gap: 5%;
-      height: auto;
       box-sizing: content-box;
       h1 {
          font-size: 2.7em;
@@ -260,8 +258,6 @@ h1 {
    }
    .welcome {
       color: $dkRed;
-   }
-   h1 {
       padding: 20px 0px 0px 0px;
    }
    p {
@@ -274,9 +270,6 @@ h1 {
       color: $accentBlue;
       font-weight: 600;
       font-size: 17px;
-   }
-   .guideNavBoxes {
-      margin-bottom: 3%;
    }
 }
 
