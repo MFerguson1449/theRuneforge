@@ -39,8 +39,9 @@ h1 {
 // !Nav! //
 #navbar {
    z-index: 2;
-   position: sticky;
+   position: fixed;
    top: 0;
+   box-sizing: content-box;
    display: flex; 
    flex-flow: row nowrap;
    justify-content: space-evenly;
@@ -75,8 +76,8 @@ h1 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       align-content: center;
-      height: 60%;
-      width: 23%;
+      text-align: center;
+      height: 100%;
       position: relative;
       left: 10%;
    }
