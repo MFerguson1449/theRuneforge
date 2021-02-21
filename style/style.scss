@@ -42,7 +42,7 @@ h1 {
    top: 0;
    display: flex; 
    flex-flow: row nowrap;
-   justify-content: space-around;
+   justify-content: space-evenly;
    align-items: center;
    background-color: #0E0E0E;
    border: solid 3px black;
@@ -58,30 +58,41 @@ h1 {
    }
    .runeforgeTitle {
       color: $dkRed;
+      font-weight: 700;
       font-family: $fontTitle;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: black;
    }
    .headerLeft {
       display: flex;
       flex-direction: row;
       align-items: center;
       height: 100%;
+      h1 {
+         width: 100%;
+      }
    }
    .navButtonGroup {
-      display: flex;
-      flex-direction: row;
-      width: 30%;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      align-content: center;
+      height: 60%;
+      width: 23%;
    }
    .navButton {
       color: white;
       cursor: pointer;
       font-weight: 600;
-      margin: 0 5%;
    }
    .navButton:hover {
       color: $accentBlue;
+   }
+   #discordHeader {
+      width: 8%;
+      height: auto;
+      position: relative;
+      top: 5%;
+      img {
+         fill: blue;
+      }
    }
    // *Drop Down* //
    .dropdownContent {
@@ -105,12 +116,6 @@ h1 {
       display: block;
    }
    // *Drop Down End* //
-   #discordHeader {
-      width: 8%;
-      height: auto;
-      margin-top: 0.5%;
-      margin-right: 10%;
-   }
 }
    
 /// Content ///
@@ -126,6 +131,7 @@ h1 {
       width: 90%;
       display: flex;
       flex-flow: column nowrap;
+      justify-content: center;
       align-items: center;
       background-color: $backdrop;
       text-align: center;
@@ -209,6 +215,45 @@ h1 {
    }
 }
 
+// !Homepage! //
+#contentFrame {
+   width: 90%;
+   display: flex;
+   flex-flow: column nowrap;
+   background-color: $backdrop;
+   #homeContent {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 3px solid black;
+      .welcome {
+         color: $dkRed;
+         margin-top: 1%;
+      }
+      p {
+         margin-top: 1%;
+         width: 55%;
+         font-size: 1em;
+         font-weight: 400;
+         #joinHereButton a {
+            text-decoration: none;
+            color: $accentBlue;
+         }
+      }
+      img {
+         width: 100%;
+         border: 3px solid black;
+         box-sizing: content-box;
+      }
+      .siteNav {
+         margin-bottom: 4%;
+      }
+   }
+}
+
 // !Guide Side Nav //
 .guideNav {
    position: fixed;
@@ -231,34 +276,6 @@ h1 {
       color: white;
       padding-left: 3px;
 
-   }
-}
-
-// !Homepage! //
-#homeMain #homeContent {
-   display: flex;
-   flex-flow: column nowrap;
-   align-items: center;
-   background-color: $backdrop;
-   text-align: center;
-   .homeBanner {
-      border-top: 3px solid black;
-      border-bottom: 3px solid black;
-   }
-   .welcome {
-      color: $dkRed;
-      padding: 20px 0px 0px 0px;
-   }
-   p {
-      width: 1045px;
-      padding: 20px 0px 20px 0px;
-      font-size: 16px;
-   }
-   a {
-      text-decoration: none;
-      color: $accentBlue;
-      font-weight: 600;
-      font-size: 17px;
    }
 }
 
