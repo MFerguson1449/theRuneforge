@@ -5,6 +5,7 @@
    margin: 0px;
    padding: 0px;
    box-sizing: border-box;
+   outline: 0;
 }
 
 html {
@@ -76,8 +77,11 @@ h1 {
       align-content: center;
       height: 60%;
       width: 23%;
+      position: relative;
+      left: 10%;
    }
    .navButton {
+      font-size: 0.9em;
       color: white;
       cursor: pointer;
       font-weight: 600;
@@ -104,13 +108,15 @@ h1 {
    .dropdownContent a {
       color: white;
       display: block;
-      padding: 15px 16px;
+      padding: 5% 2%;
       text-align: center;
       min-width: 180px;
-      border: 1px solid black;
    }
    .dropdownContent a:hover {
       background-color: #2E2E2E;
+      color: $accentBlue;
+      transform: ease;
+      transition-duration: 0.2s;
    }
    #guidesDropdown:hover .dropdownContent {
       display: block;
