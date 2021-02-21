@@ -22,7 +22,6 @@ h4 {
 }
 h3 {
    font-size: 25px;
-   color: $accentBlue;
 }
 h2 {
    font-size: 31.25px;
@@ -43,31 +42,39 @@ h1 {
    top: 0;
    display: flex; 
    flex-flow: row nowrap;
-   justify-content: flex-end;
+   justify-content: space-around;
    align-items: center;
    background-color: #0E0E0E;
    border: solid 3px black;
    width: 90%;
-   -webkit-user-select: none;  /* Chrome all / Safari all */
-   -moz-user-select: none;     /* Firefox all */
-   -ms-user-select: none;      /* IE 10+ */
+   height: 7vh;
+   a {
+      text-decoration: none;
+   }
    #dkLogo {
+      height: 100%;
       position: relative;
-      top: 13%;
-      left: 10%;
+      top: 5%;
+   }
+   .runeforgeTitle {
+      color: $dkRed;
+      font-family: $fontTitle;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+   }
+   .headerLeft {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
    }
    .navButtonGroup {
       display: flex;
       flex-direction: row;
-      height: auto;
       width: 30%;
       justify-content: space-between;
-      margin-left: 5%;
    }
    .navButton {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       color: white;
       cursor: pointer;
       font-weight: 600;
@@ -99,41 +106,13 @@ h1 {
    }
    // *Drop Down End* //
    #discordHeader {
-      display: flex;
-      width: 30%;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      p {
-         margin-top: 5px;
-         color: $accentBlue;
-         font-size: 16px;
-         font-weight: 600;
-      }
-      #discordButton {
-         width: 170px;
-         height: 30px;
-         border-radius: 40px;
-         border: 3px solid black;
-         background-color: #1b1b1b;
-         text-align: center;
-         cursor: pointer;
-      }
-      #discordButton p {
-         color: white;
-      }
-      #discordButton:hover {
-         background-color: #2b2b2b;
-      }
-   }
-   #runeforgeTitle {
-      padding: 0px 20px 0px 0px;
-   }
-   a {
-      text-decoration: none;
+      width: 8%;
+      height: auto;
+      margin-top: 0.5%;
+      margin-right: 10%;
    }
 }
-
+   
 /// Content ///
 // !Global! //
 .main {
@@ -152,6 +131,9 @@ h1 {
       text-align: center;
       border: 3px solid black;
       position: relative;
+      h3 {         
+         color: $accentBlue;
+      }
    }
 }
 
