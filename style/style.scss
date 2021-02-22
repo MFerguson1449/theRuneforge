@@ -129,6 +129,7 @@ h1 {
 // !Global! //
 .main {
    width: 100vw;
+   margin-top: 3.5vw;
    display: flex;
    flex-flow: column nowrap;
    border: 3px solid black;
@@ -293,36 +294,33 @@ h1 {
    text-align: left;
    padding: 3% 11% 0% 3%;
    z-index: 0;
-   width: 90%;
    h1 {
-      padding-bottom: 20px;
+      margin-top: 2%;
       margin-left: 2%;
-      margin-top: 4%;
    }
    h2 {
-      padding-bottom: 20px;
-      margin-left: 3%;
-      margin-top: 3%;
+      margin-left: 2%;
    }
    h3 {
       margin-left: 4%;
-      margin-top: 4%;
    }
-
    h4 {
-      margin-top: 2%;
       margin-left: 6%;
-      margin-top: 1%;
    }
-   p {
+   h5 {
+      margin-left: 6%;
+   }
+   p {  
       margin-left: 6%;
       width: 75%;
       line-height: 25px;
-      margin-top: 1%;
+      padding-right: 8%;
+   }
+   ul {
+      margin-left: 6%;
    }
    li {
       list-style: none;
-      margin-left: 7%;
       line-height: 34px;
       font-size: 12.8px;
    }
@@ -336,7 +334,7 @@ h1 {
    #talents {
       margin-top: 20px;
       #talentChart {
-         margin: 5% 2% 5% 6%;
+         margin: 2% 0% 2% 6%;
          margin-bottom: 30px;
          display: grid;
          width: 52%;
@@ -377,15 +375,17 @@ h1 {
             background-color: #222222;
          }
       }
-      .talentTierImg {
-         margin-left: 1.2%;
-         width: 90%;
-      }
       .talentTierDesc {
          img {
             width: 56%;
             height: auto;
-            margin: 0% 0% 2% 4%;
+            margin: 2% 0% 2% 4%;
+         }
+         p {
+            margin-bottom: 2%;
+         }
+         h2 {
+            margin-bottom: 2%;
          }
       }    
    }
@@ -394,21 +394,21 @@ h1 {
       a {
          color: $legendaryOrange;
       }
+      .legendaryBlock {
+         margin-bottom: 2%;
+      }
    }
    
    // !Stat Weights! //
    #statWeights {
       h5 {
-         margin-left: 10%;
          font-weight: 600;
+         margin-left: 10%;
       }
    }
 
    // !Enchants & Consumables! //
    #enchantsAndConsumables {
-      h3 {
-         margin-top: 2%;
-      }
       h1 {
          padding-bottom: 0;
       }
