@@ -108,6 +108,7 @@ h1 {
          align-content: center;
          text-align: center;
          height: 100%;
+         margin: auto;
       }
       .navButton {
          font-size: 0.9em;
@@ -414,42 +415,36 @@ h1 {
       .bloodBox {
          grid-area: a;
          color: $bloodRed;
-         display: flex;
-         justify-content: center;
-         align-items: center;
          h1 {
             position: absolute;
             pointer-events: none;
-            -webkit-text-stroke-width: 1.5px;
-            -webkit-text-stroke-color: black;
          }
       }
       .frostBox {
          grid-area: b;
          color: $frostBlue;
-         display: flex;
-         justify-content: center;
-         align-items: center;
          h1 {
             position: absolute;
             pointer-events: none;
-            -webkit-text-stroke-width: 1.5px;
-            -webkit-text-stroke-color: black;
          }
       }
       .unholyBox {
          grid-area: c;
          color: $unholyGreen;
-         display: flex;
-         justify-content: center;
-         align-items: center;
          h1 {
             position: absolute;
             pointer-events: none;
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: black;
          }
       }
+      .navBox {
+         -webkit-text-stroke-width: 1.5px;
+         -webkit-text-stroke-color: black;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-family: $fontTitle;
+      }
+
    }
 }
 
@@ -522,5 +517,14 @@ h1 {
    }
    .main .navbar {
       width: 95%;
+      .headerLeft {
+         display: none;
+      }
+      .headerRight {
+         width: 100%;
+         .discordHeader {
+            display: none;
+         }
+      }
    }
 }
