@@ -454,11 +454,11 @@ h1 {
 // !Guide Side Nav //
 .guideNav {
    margin-top: 3%;
-   position: fixed;
    text-align: left;
    z-index: 2;
    border-left: 2px solid white;
    padding-left: 0.5%;
+   position: fixed;
    ul {
       width: 100%;
    }
@@ -474,6 +474,20 @@ h1 {
    }
    a:hover {
       color: $accentBlue;
+   }
+}
+.guideDiscordButton {
+   position: fixed;
+   top: 73%;
+   height: 6%;
+   width: 10%;
+   background-color: #7289DA;
+   display: grid;
+   border-radius: 8px;
+   .fullDiscordImage {
+      width: 100%;
+      height: auto;
+      padding: 1% 5%;
    }
 }
 // ! Media Queries ! //
