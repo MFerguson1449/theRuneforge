@@ -199,7 +199,10 @@ h1 {
    .siteNav {
       margin-bottom: 4.1%;
       border: none;
-      width: 80%;
+      width: 100%;
+      background: #0e0e0e;
+      border-top: 2px solid black;
+      border-bottom: solid black;
    }
 }
 
@@ -231,7 +234,6 @@ h1 {
    }
    p {  
       margin-left: 6%;
-      width: 90%;
       line-height: 25px;
       padding-right: 8%;
    }
@@ -273,6 +275,7 @@ h1 {
 
    // !Talents! //
    #talents {
+      width: 100%;
       #talentChart {
          margin: 2% 0% 2% 6%;
          margin-bottom: 30px;
@@ -405,7 +408,7 @@ h1 {
       align-content: center;
       grid-column-gap: 2%;
       h1 {
-         font-size: 3em;
+         font-size: 3.5em;
          z-index: 1;
       }
       .navImg {
@@ -437,8 +440,8 @@ h1 {
          }
       }
       .navBox {
-         -webkit-text-stroke-width: 1.5px;
-         -webkit-text-stroke-color: black;
+         -webkit-text-stroke-width: 2px;
+         -webkit-text-stroke-color: rgb(34, 23, 23);
          display: flex;
          justify-content: center;
          align-items: center;
@@ -508,7 +511,7 @@ h1 {
       width: 95%;
       #guideContent {
          .guideLeft {
-            width: 100%;
+            width: 90%;
          }
          .guideRight {
             display: none;
@@ -525,6 +528,18 @@ h1 {
          .discordHeader {
             display: none;
          }
+      }
+   }
+   .main .siteNav .navBox {
+      -webkit-text-stroke-width: 1px;
+   }
+   // !Guide Queries! //
+   #guideContent {
+      #talents #talentChart {
+         width: 90%;
+         .talentChartRow li {
+            font-size: calc(10.24px + 6 * ((100vw - 520px) / 680));
+          }
       }
    }
 }
