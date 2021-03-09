@@ -278,45 +278,33 @@ h1 {
    #talents {
       width: 100%;
       #talentChart {
-         margin: 2% 0% 2% 8%;
-         margin-bottom: 30px;
-         display: grid;
-         width: 52%;
-         height: auto;
-         grid-template-rows: repeat(2, 170px);
-         font-weight: 700;
+         margin: 4% 0% 4% 8%;
+         width: 75%;
+         display: flex;
+         flex-direction: column;
          .talentChartRow {
-            border: 0.4px solid #9F9F9F;
-            display: grid;
-            grid-auto-flow: row;
-            grid-template-columns: 30% 20% 80%;
-            padding-left: 10%;
-            line-height: 19px;
+            border: 1px solid white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
             align-items: center;
-            .talentTiers {
-               text-align: right;
-            }
-            .talentNames {
-               color: $dkRed;
-               padding-right: 20%;
-            }
-            li {
-               line-height: 19px;
-               font-size: 12.8px;
-            }
-            h4 {
-               text-align: center;
-               font-size: 14px;
-            }
-            a {
-               padding-left: 3px;
-            }
-         }        
-         #firstBuild {
-            background-color: #161616;
+            padding: 5% 0;
          }
-         #secondBuild {
-            background-color: #222222;
+         .talentsLeft {
+            width: 50%;
+            display: flex;
+            place-content: center;
+            text-align: center;
+            h4 {
+               width: 50%;
+            }
+         }
+         .talentsRight {
+            width: 50%;
+            h5 {
+               display: inline-block;
+               font-size: 1.1em;
+            }
          }
       }
       .talentTierDesc {
@@ -571,6 +559,15 @@ h1 {
    #guideContent {
       #talents #talentChart {
          width: 90%;
+         .talentChartRow {
+            flex-direction: column;
+            .talentsRight {
+               width: 100%;
+               display: flex;
+               place-content: center;
+               margin-top: 2%;
+            }
+         }
          .talentChartRow li {
             font-size: calc(10.24px + 6 * ((100vw - 520px) / 680));
           }
