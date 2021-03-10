@@ -317,6 +317,28 @@ h1 {
          }
       }    
    }
+
+   // !Rotation! //
+   #rotation {
+      .rotationGroup {
+         margin-bottom: 4%;
+         h3,h4 {
+            margin-bottom: 1%;
+         }
+         ol {
+            margin-left: 10%;
+         }
+         li {
+            list-style-type: decimal;
+         }
+         .advancedTipButton {
+            color: $frostBlue;
+            text-decoration: none;
+            font-weight: 600;
+
+         }
+      }
+   }
    // !Legendaries! //
    #legendaries {
       .legendaryBlock {
